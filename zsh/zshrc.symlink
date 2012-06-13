@@ -33,22 +33,7 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.zsh_aliases
-
-# Customize to your needs...
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/Cellar/ruby/1.9.3-p194/bin:/usr/local/sbin
+source $HOME/.zsh_local
 
 # extra stuff
 unsetopt correct_all
-
-# Set Apple Terminal.app resume directory
-if [[ $TERM_PROGRAM == "Apple_Terminal" ]] && [[ -z "$INSIDE_EMACS" ]] {
-  function chpwd {
-    local SEARCH=' '
-    local REPLACE='%20'
-    local PWD_URL="file://$HOSTNAME${PWD//$SEARCH/$REPLACE}"
-    printf '\e]7;%s\a' "$PWD_URL"
-  }
-
-  chpwd
-}
-

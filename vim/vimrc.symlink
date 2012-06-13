@@ -2,21 +2,28 @@ filetype plugin indent on
 colorscheme molokai 
 syntax on
 
-set expandtab
 set ts=2
 set ai sw=2
 set t_Co=256
 set number
 set nowrap
 set pastetoggle=<F4>
-set smarttab
+set nosmarttab
+set expandtab
+set smartindent
 set wildmenu
 set wildmode=longest,list,full
 set ttyfast
 set ruler
 set scrolloff=3
+set showcmd
 set ls=2 
 let g:buftabs_in_statusline=1
+set backspace=indent,eol,start
+set nohlsearch
+set incsearch
+set ignorecase
+set smartcase
 
 noremap <C-H> :bprev<CR>
 noremap <C-L> :bnext<CR>
