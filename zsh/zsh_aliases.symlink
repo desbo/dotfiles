@@ -1,0 +1,3 @@
+alias cat='cat -n'
+alias vi='mvim -v'
+alias vim='mvim -v'
