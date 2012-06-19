@@ -32,7 +32,6 @@ ZSH_THEME="dstufft"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-source $HOME/.zsh_aliases
 source $HOME/.zsh_local
 
 # extra stuff
