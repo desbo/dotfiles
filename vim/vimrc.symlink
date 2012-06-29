@@ -24,6 +24,7 @@ set nohlsearch
 set incsearch
 set ignorecase
 set smartcase
+set autochdir
 
 noremap <C-H> :bprev<CR>
 noremap <C-L> :bnext<CR>
