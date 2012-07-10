@@ -1,5 +1,5 @@
 filetype plugin indent on
-colorscheme molokai 
+colorscheme xoria256 
 syntax on
 
 set ts=2
