@@ -1,5 +1,5 @@
 filetype plugin indent on
-colorscheme molokai 
+colorscheme lucius 
 syntax on
 
 set ts=2
@@ -19,6 +19,7 @@ set scrolloff=3
 set showcmd
 set ls=0 
 let g:buftabs_only_basename=1
+let g:lucius_style="dark"
 set backspace=indent,eol,start
 set nohlsearch
 set incsearch
