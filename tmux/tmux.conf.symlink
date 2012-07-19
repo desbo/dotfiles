@@ -75,4 +75,4 @@ set -g status-interval 1
 
 ### Load Theme
 
-source-file "${HOME}/.tmux/themes/wemux"
+source-file "${HOME}/.tmux/themes/wemux-mod"
