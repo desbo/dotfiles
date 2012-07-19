@@ -52,13 +52,10 @@ bind-key C-a last-window
 # 256 Colours 
 set -g default-terminal "screen-256color"
 
-# _ Handy options 
-
 # Start numbering windows at 1
 set -g base-index 1
 
 set -g history-limit 10000
-
 
 # Mouse scrolling within 'copy-mode'
 set-window-option -g mode-mouse on
@@ -73,6 +70,6 @@ set -g visual-activity off
 set-option -g   status-utf8 on
 set -g status-interval 1
 
-### Load Theme
-
+# load theme and local config 
 source-file "${HOME}/.tmux/themes/wemux-mod"
+source-file "${HOME}/.tmux_local.conf"
