@@ -1,5 +1,5 @@
 filetype plugin indent on
-colorscheme xoria256mod 
+colorscheme lucius
 syntax on
 
 set ts=2
@@ -28,4 +28,4 @@ set autochdir
 
 noremap <C-H> :bprev<CR>
 noremap <C-L> :bnext<CR>
-nmap <silent> <special> <F2> :NERDTreeToggle<CR>
+noremap <silent> <special> <F2> :NERDTreeToggle<CR>
