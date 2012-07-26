@@ -28,3 +28,4 @@ set autochdir
 
 noremap <C-H> :bprev<CR>
 noremap <C-L> :bnext<CR>
+nmap <silent> <special> <F2> :NERDTreeToggle<CR>
