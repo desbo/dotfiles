@@ -1,32 +1,50 @@
+" vundle 
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+Bundle 'pangloss/vim-javascript'
+
+" visual/interface
+syntax on
 filetype plugin indent on
 colorscheme xoria256mod
-syntax on
 
-set ts=2
-set ai sw=2
 set t_Co=256
+set ruler
 set number
 set nowrap
-set pastetoggle=<F4>
+set scrolloff=3
+set nohlsearch
+set showcmd
+set ttyfast
+set backspace=indent,eol,start
+set wildmenu
+set wildmode=longest,list,full
+set ls=0 
+
+" text
+set ts=2
+set ai sw=2
 set nosmarttab
 set expandtab
 set smartindent
-set wildmenu
-set wildmode=longest,list,full
-set ttyfast
-set ruler
-set scrolloff=3
-set showcmd
-set ls=0 
-let g:buftabs_only_basename=1
-set backspace=indent,eol,start
-set nohlsearch
+
+" search
+set smartcase
 set incsearch
 set ignorecase
-set smartcase
+
+" buffers
 set autochdir
 set hidden
+let g:buftabs_only_basename=1
 
+" keys
+set pastetoggle=<F4>
 noremap <silent> <C-H> :bprev<CR>
 noremap <silent> <C-L> :bnext<CR>
 noremap <silent> <special> <F2> :NERDTreeToggle<CR>
