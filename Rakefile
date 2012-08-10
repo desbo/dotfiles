@@ -32,6 +32,7 @@ task :install do
     end
     `ln -s "$PWD/#{linkable}" "#{target}"`
   end
+  `git submodule init && git submodule install`
 end
 
 task :uninstall do
