@@ -42,4 +42,3 @@ unsetopt correct_all
 
 # autoload
 autoload zmv
-
