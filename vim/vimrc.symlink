@@ -15,7 +15,7 @@ Bundle 'msanders/snipmate.vim'
 " visual/interface
 syntax on
 filetype plugin indent on
-colorscheme xoria256mod
+colorscheme Tomorrow-Night
 
 set t_Co=256
 set ruler
