@@ -8,9 +8,11 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'pangloss/vim-javascript'
 Bundle 'scrooloose/syntastic'
+Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-cucumber'
 Bundle 'tpope/vim-surround'
 Bundle 'msanders/snipmate.vim'
+Bundle 'vim-scripts/buftabs'
 
 " visual/interface
 syntax on
