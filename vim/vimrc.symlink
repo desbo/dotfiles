@@ -56,3 +56,8 @@ set pastetoggle=<F4>
 noremap <silent> <C-H> :bprev<CR>
 noremap <silent> <C-L> :bnext<CR>
 noremap <silent> <special> <F2> :NERDTreeToggle<CR>
+
+" html indent config
+let g:html_indent_inctags = "html,body,head,tbody"
+let g:html_indent_script1 = "inc"
+let g:html_indent_style1 = "inc"
