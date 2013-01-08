@@ -32,7 +32,9 @@ ZSH_THEME="dstufft"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-source $HOME/.zsh_local
+if [[ -a $HOME/.zsh_local ]]; then
+  source $HOME/.zsh_local
+fi
 
 # extra stuff
 setopt extendedglob
