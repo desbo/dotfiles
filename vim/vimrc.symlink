@@ -9,16 +9,26 @@ Bundle 'gmarik/vundle'
 Bundle 'pangloss/vim-javascript'
 Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdtree'
-Bundle 'tpope/vim-cucumber'
 Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-cucumber'
 Bundle 'tpope/vim-markdown'
 Bundle 'msanders/snipmate.vim'
 Bundle 'vim-scripts/buftabs'
 Bundle 'jnwhiteh/vim-golang'
+Bundle 'avakhov/vim-yaml'
 
 " visual/interface
 syntax on
 filetype plugin indent on
+set background=dark
+
+if has('gui_running') 
+  set fu
+  set guioptions-=rL
+  set guifont=Inconsolata-dz\ for\ Powerline:h11
+  set clipboard=unnamed
+endif
+
 colorscheme Tomorrow-Night
 
 set t_Co=256
@@ -53,9 +63,9 @@ let g:buftabs_only_basename=1
 
 " keys
 set pastetoggle=<F4>
-noremap <silent> <C-H> :bprev<CR>
-noremap <silent> <C-L> :bnext<CR>
-noremap <silent> <special> <F2> :NERDTreeToggle<CR>
+nnoremap <silent> <C-H> :bprev<CR>
+nnoremap <silent> <C-L> :bnext<CR>
+nnoremap <silent> <special> <F2> :NERDTreeToggle<CR>
 
 " html indent config
 let g:html_indent_inctags = "html,body,head,tbody"
