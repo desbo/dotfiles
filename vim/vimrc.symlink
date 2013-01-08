@@ -16,6 +16,7 @@ Bundle 'msanders/snipmate.vim'
 Bundle 'vim-scripts/buftabs'
 Bundle 'jnwhiteh/vim-golang'
 Bundle 'avakhov/vim-yaml'
+Bundle 'chriskempson/base16-vim'
 
 " visual/interface
 syntax on
@@ -27,9 +28,11 @@ if has('gui_running')
   set guioptions-=rL
   set guifont=Inconsolata-dz\ for\ Powerline:h11
   set clipboard=unnamed
+  colorscheme base16-chalk
+else
+  colorscheme Tomorrow-Night
 endif
 
-colorscheme Tomorrow-Night
 
 set t_Co=256
 set ruler
