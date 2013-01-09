@@ -28,13 +28,12 @@ if has('gui_running')
   set guioptions-=rL
   set guifont=Inconsolata-dz\ for\ Powerline:h11
   set clipboard=unnamed
-  colorscheme base16-chalk
+  colorscheme base16-tomorrow
 else
+  set t_Co=256
   colorscheme Tomorrow-Night
 endif
 
-
-set t_Co=256
 set ruler
 set number
 set nowrap
