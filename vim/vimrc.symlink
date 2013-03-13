@@ -82,5 +82,8 @@ let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
 
+" syntastic
+let g:syntastic_html_checker = "tidy"
+
 " supertab config
 let g:SuperTabDefaultCompletionType = "context"
