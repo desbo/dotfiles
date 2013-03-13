@@ -35,7 +35,7 @@ if has('gui_running')
   set fu
   set guioptions-=rL
   set guifont=Inconsolata-dz\ for\ Powerline:h11
-  colorscheme base16-eighties
+  colorscheme Tomorrow-Night-Eighties
 else
   set t_Co=256
   colorscheme Tomorrow-Night-Eighties
