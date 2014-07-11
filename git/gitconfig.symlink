@@ -1,0 +1,16 @@
+[user]
+  name = Sam Desborough
+  email = sam.desborough@gmail.com
+
+[github]
+  user = desbo
+
+[color]
+	ui = auto
+	status = auto
+	branch = auto
+	diff = auto
+
+[alias]
+  dc = diff --cached
+  ap = add -p
