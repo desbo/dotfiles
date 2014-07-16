@@ -14,3 +14,6 @@
 [alias]
   dc = diff --cached
   ap = add -p
+
+[core]
+  editor = vi
