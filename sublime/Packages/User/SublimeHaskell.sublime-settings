@@ -1,0 +1,7 @@
+{
+	"add_to_PATH":
+	[
+		"/usr/local/bin"
+	],
+	"enable_hdevtools": false
+}

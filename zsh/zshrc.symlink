@@ -44,3 +44,10 @@ unsetopt correct_all
 
 # autoload
 autoload zmv
+
+export LC_ALL=en_GB.utf-8 
+export LANG="$LC_ALL" 
+
+export GOPATH=/Users/sam/Development/learning/go
+
+export PATH=/usr/local/bin:$PATH:$HOME/.rvm/bin:$GOPATH/bin # Add RVM to PATH for scripting

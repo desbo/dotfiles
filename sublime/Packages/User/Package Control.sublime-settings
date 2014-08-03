@@ -1,0 +1,23 @@
+{
+	"installed_packages":
+	[
+		"Alignment",
+		"BracketHighlighter",
+		"DashDoc",
+		"DocBlockr",
+		"Gist",
+		"GitGutter",
+		"GoSublime",
+		"HTML5",
+		"Nodejs",
+		"Rust",
+		"Sass",
+		"SCSS",
+		"SideBarEnhancements",
+		"SublimeHaskell",
+		"SublimeLinter",
+		"SublimeLinter-jshint",
+		"Theme - Centurion",
+		"Tomorrow Color Schemes"
+	]
+}
