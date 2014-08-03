@@ -35,7 +35,8 @@ set background=dark
 if has('gui_running') 
   set fu
   set guioptions-=rL
-  set guifont=Inconsolata-dz\ for\ Powerline:h11
+  set guifont=Source\ Code\ Pro\ for\ Powerline
+  set linespace=2
   colorscheme Tomorrow-Night-Eighties
 else
   set t_Co=256
