@@ -20,6 +20,7 @@ Bundle 'bling/vim-airline'
 Bundle 'bling/vim-bufferline'
 Bundle 'tpope/vim-fugitive'
 Bundle 'jelera/vim-javascript-syntax'
+Bundle 'Valloric/YouCompleteMe'
 
 " visual/interface
 syntax on
@@ -28,8 +29,8 @@ set background=dark
 colorscheme Tomorrow-Night-Eighties
 
 if has('gui_running')
-  set fu
-  set guioptions-=rL
+  "set fu
+  set guioptions-=mrL
   set guifont=Source\ Code\ Pro\ for\ Powerline:h12
   set linespace=2
 else
@@ -82,6 +83,3 @@ nnoremap <silent> <special> <F2> :NERDTreeToggle<CR>
 let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
-
-" supertab config
-let g:SuperTabDefaultCompletionType = "context"
