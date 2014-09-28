@@ -2,6 +2,7 @@
 	"installed_packages":
 	[
 		"Alignment",
+		"AngularJS",
 		"BracketHighlighter",
 		"DashDoc",
 		"DocBlockr",
@@ -9,13 +10,14 @@
 		"GitGutter",
 		"GoSublime",
 		"HTML5",
-		"Nodejs",
+		"PackageResourceViewer",
 		"Rust",
 		"Sass",
 		"SCSS",
 		"SideBarEnhancements",
-		"SublimeHaskell",
+		"Stylus",
 		"SublimeLinter",
+		"SublimeLinter-contrib-golint",
 		"SublimeLinter-jshint",
 		"Theme - Centurion",
 		"Tomorrow Color Schemes"
