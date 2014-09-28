@@ -22,6 +22,7 @@ Bundle 'bling/vim-bufferline'
 Bundle 'tpope/vim-fugitive'
 Bundle 'jelera/vim-javascript-syntax'
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'vim-scripts/AutoClose'
 
 " visual/interface
 syntax on
@@ -49,6 +50,7 @@ set backspace=indent,eol,start
 set wildmenu
 set wildmode=longest,list,full
 set ls=0
+set cc=80
 
 " text
 set ts=2
