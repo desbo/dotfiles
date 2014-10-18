@@ -34,8 +34,9 @@ colorscheme Tomorrow-Night-Eighties
 if has('gui_running')
   "set fu
   set guioptions-=mrL
-  set guifont=Source\ Code\ Pro\ for\ Powerline:h12
-  set linespace=2
+  "set guifont=Source\ Code\ Pro\ for\ Powerline:h12
+  set guifont=InputMonoNarrow\ ExLight:h12
+  set linespace=3
 else
   set t_Co=256
 endif
