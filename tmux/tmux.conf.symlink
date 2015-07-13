@@ -72,4 +72,4 @@ set -g status-interval 1
 
 # load theme and local config 
 source-file "${HOME}/.tmux/themes/wemux-mod"
-source-file "${HOME}/.tmux_local.conf"
+#source-file "${HOME}/.tmux_local.conf"

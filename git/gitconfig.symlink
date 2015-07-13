@@ -15,9 +15,10 @@
   dc = diff --cached
   ap = add -p
   cm = commit -m
+  find = !git ls-files | grep --color=auto
 
 [core]
-  editor = vi
+  editor = mvim -v
 
 [push]
   default = current
