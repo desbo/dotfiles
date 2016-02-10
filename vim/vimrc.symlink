@@ -21,7 +21,6 @@ Plugin 'bling/vim-airline'
 Plugin 'bling/vim-bufferline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'jelera/vim-javascript-syntax'
-Plugin 'vim-scripts/AutoClose'
 Plugin 'rizzatti/dash.vim'
 Plugin 'keith/parsec.vim'
 

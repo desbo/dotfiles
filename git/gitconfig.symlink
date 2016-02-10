@@ -6,19 +6,33 @@
   user = desbo
 
 [color]
-	ui = auto
-	status = auto
-	branch = auto
-	diff = auto
+  ui = always
+[color "diff"]
+  meta = cyan bold
+  commit = blue
+  frag = magenta bold
+  old = red bold
+  new = green bold
+  whitespace = red reverse
+[color "diff-highlight"]
+  oldNormal = red bold
+  oldHighlight = "red bold 52"
+  newNormal = "green bold"
+  newHighlight = "green bold 22"
 
 [alias]
   dc = diff --cached
   ap = add -p
   cm = commit -m
   find = !git ls-files | grep --color=auto
+  rgrep = !git grep
 
 [core]
   editor = mvim -v
 
 [push]
   default = current
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
