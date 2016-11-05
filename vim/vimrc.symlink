@@ -3,27 +3,18 @@ set nocompatible
 filetype off
 
 set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
+call vundle#begin()
 
-Plugin 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'tpope/vim-surround'
-Plugin 'garbas/vim-snipmate'
-Plugin 'honza/vim-snippets'
-Plugin 'docunext/closetag.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'bling/vim-airline'
 Plugin 'bling/vim-bufferline'
-Plugin 'tpope/vim-fugitive'
-Plugin 'jelera/vim-javascript-syntax'
-Plugin 'vim-scripts/AutoClose'
-Plugin 'rizzatti/dash.vim'
-Plugin 'keith/parsec.vim'
+
+call vundle#end()
 
 " visual/interface
 syntax on
