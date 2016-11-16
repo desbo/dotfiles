@@ -9,6 +9,7 @@ task :install do
   backup_all = false
 
   linkables.each do |linkable|
+    print linkable
     overwrite = false
     backup = false
 
@@ -55,4 +56,10 @@ task :uninstall do
   end
 end
 
-task :default => 'install'
+task :zgen do
+  `git clone git@github.com:tarjoilija/zgen.git $HOME/.zgen`
+end
+
+
+
+task :default => ['install', 'zgen']
