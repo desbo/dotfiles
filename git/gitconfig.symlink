@@ -1,12 +1,13 @@
 [user]
   name = Sam Desborough
   email = sam.desborough@gmail.com
+	signingkey = 186EED84
 
 [github]
   user = desbo
 
 [color]
-  ui = always
+  ui = auto
 [color "diff"]
   meta = cyan bold
   commit = blue
@@ -24,11 +25,11 @@
   dc = diff --cached
   ap = add -p
   cm = commit -m
-  find = !git ls-files | grep --color=auto
-  rgrep = !git grep
-
+  nb = "!git checkout -b $(git config --get github.user)/$1 #"
+  
 [core]
-  editor = mvim -v
+  editor = mvim -v 
+	excludesfile = /Users/sdesborough/.gitignore_global
 
 [push]
   default = current
@@ -36,3 +37,10 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+[rerere]
+	enabled = 1
+
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg

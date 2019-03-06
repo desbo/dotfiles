@@ -99,3 +99,13 @@ elif type compctl &>/dev/null; then
 fi
 ###-end-npm-completion-###
 
+
+export NVM_DIR="/usr/local/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /Users/sdesborough/.config/yarn/global/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/sdesborough/.config/yarn/global/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /Users/sdesborough/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/sdesborough/.config/yarn/global/node_modules/tabtab/.completions/sls.zshexport PATH="/usr/local/opt/ruby/bin:$PATH"
