@@ -1,7 +1,7 @@
 [user]
   name = Sam Desborough
   email = sam.desborough@gmail.com
-	signingkey = 186EED84
+#	signingkey = 186EED84
 
 [github]
   user = desbo
@@ -28,7 +28,7 @@
   nb = "!git checkout -b $(git config --get github.user)/$1 #"
   
 [core]
-  editor = mvim -v 
+  editor = nvim
 	excludesfile = /Users/sdesborough/.gitignore_global
 
 [push]
@@ -41,6 +41,6 @@
 	enabled = 1
 
 [commit]
-	gpgsign = true
+	gpgsign = false
 [gpg]
 	program = gpg
