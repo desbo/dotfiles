@@ -1,7 +1,7 @@
 [user]
   name = Sam Desborough
   email = sam.desborough@gmail.com
-#	signingkey = 186EED84
+  signingkey = 515C3780E3997A0D
 
 [github]
   user = desbo
@@ -26,21 +26,21 @@
   ap = add -p
   cm = commit -m
   nb = "!git checkout -b $(git config --get github.user)/$1 #"
-  
+
 [core]
   editor = nvim
-	excludesfile = /Users/sdesborough/.gitignore_global
+  excludesfile = /Users/sdesborough/.gitignore_global
 
 [push]
   default = current
 [filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-	required = true
+  clean = git-lfs clean %f
+  smudge = git-lfs smudge %f
+  required = true
 [rerere]
-	enabled = 1
+  enabled = 1
 
 [commit]
-	gpgsign = false
+  gpgsign = true
 [gpg]
-	program = gpg
+  program = gpg
