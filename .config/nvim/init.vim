@@ -2,17 +2,17 @@
 set nocompatible
 filetype off
 
-call plug#begin('~/.vim/plugged')
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.local/share/nvim/site/autoload/plug --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
 
-" Plug 'vim-syntastic/syntastic'
-Plug 'scrooloose/nerdcommenter'
-Plug 'MarcWeber/vim-addon-mw-utils'
-Plug 'tomtom/tlib_vim'
-Plug 'sheerun/vim-polyglot'
+call plug#begin('~/.config/vim/plugged')
+
 Plug 'bling/vim-airline'
 Plug 'bling/vim-bufferline'
-Plug 'tpope/vim-fugitive'
-Plug 'jelera/vim-javascript-syntax'
+Plug 'fenetikm/falcon'
 
 call plug#end()
 
@@ -20,15 +20,9 @@ call plug#end()
 syntax on
 filetype plugin indent on
 set background=dark
-colorscheme Tomorrow-Night-Eighties
+colorscheme falcon
 
-if has('gui_running')
-  "set fu
-  set guioptions-=mrL
-  "set guifont=Source\ Code\ Pro\ for\ Powerline:h12
-  set guifont=InputMonoNarrow\ ExLight:h12
-  set linespace=3
-else
+if !has('gui_running')
   set t_Co=256
 endif
 
