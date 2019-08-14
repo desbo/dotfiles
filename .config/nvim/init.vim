@@ -19,8 +19,8 @@ call plug#end()
 " visual/interface
 syntax on
 filetype plugin indent on
-set background=dark
 colorscheme falcon
+set termguicolors
 
 if !has('gui_running')
   set t_Co=256
@@ -62,6 +62,8 @@ set laststatus=2
 set noshowmode
 let g:airline_powerline_fonts = 1
 let g:bufferline_echo = 0
+let g:falcon_airline = 1
+let g:airline_theme = 'falcon'
 
 " keys
 set pastetoggle=<F4>
