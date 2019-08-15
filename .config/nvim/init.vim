@@ -11,8 +11,8 @@ endif
 call plug#begin('~/.config/vim/plugged')
 
 Plug 'bling/vim-airline'
-Plug 'bling/vim-bufferline'
 Plug 'fenetikm/falcon'
+Plug 'edkolev/tmuxline.vim'
 
 call plug#end()
 
@@ -65,13 +65,4 @@ let g:bufferline_echo = 0
 let g:falcon_airline = 1
 let g:airline_theme = 'falcon'
 
-" keys
-set pastetoggle=<F4>
-nnoremap <silent> <C-H> :bprev<CR>
-nnoremap <silent> <C-L> :bnext<CR>
-nnoremap <silent> <special> <F2> :NERDTreeToggle<CR>
-
-" html indent config
-let g:html_indent_inctags = "html,body,head,tbody"
-let g:html_indent_script1 = "inc"
-let g:html_indent_style1 = "inc"
+let g:airline#extensions#tmuxline#enabled = 0
