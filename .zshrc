@@ -22,3 +22,5 @@ alias lll='exa -l | less'
 alias lla='exa -la'
 alias llt='exa -T'
 alias llfu='exa -bghHliS --git'
+
+export GPG_TTY=$(tty)
