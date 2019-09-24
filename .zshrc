@@ -1,6 +1,8 @@
+fpath+=${ZDOTDIR:-~}/.zsh_functions
+fpath+=("$HOME/.zsh/pure")
+
 autoload -U promptinit; promptinit
 prompt pure
-fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
