@@ -26,6 +26,8 @@ alias lla='exa -la'
 alias llt='exa -T'
 alias llfu='exa -bghHliS --git'
 
+alias clean-local-git-branches='git branch --merged | egrep -v "(^\*|master)" | xargs git branch -d'
+
 export GPG_TTY=$(tty)
 
 setopt hist_expire_dups_first # delete duplicates first when HISTFILE size exceeds HISTSIZE
