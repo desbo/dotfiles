@@ -19,5 +19,7 @@ brew install fd
 brew install tmux
 brew install reattach-to-user-namespace
 
+brew install gpg2 pinentry-mac
+
 brew tap homebrew/cask-fonts
 brew cask install font-input
