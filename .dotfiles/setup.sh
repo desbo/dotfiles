@@ -21,5 +21,7 @@ brew install reattach-to-user-namespace
 
 brew install gpg2 pinentry-mac
 
+brew cask install alacritty
+
 brew tap homebrew/cask-fonts
 brew cask install font-input
