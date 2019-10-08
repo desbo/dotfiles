@@ -1,14 +1,21 @@
 #!/usr/bin/env bash
 
+ZSH_DIR="$HOME/.zsh"
+
 if ! hash brew 2>/dev/null; then
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-mkdir -p "$HOME/.zsh"
-git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"
+if ! test -d $ZSH_DIR; then
+	mkdir -p $ZSH_DIR
+fi
 
-brew update
-brew upgrade 
+if ! test -d $ZSH_DIR/pure; then
+	git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"
+fi
+
+brew -v update
+brew -v upgrade 
 
 brew install zsh
 brew install nvim
@@ -25,3 +32,6 @@ brew cask install alacritty
 
 brew tap homebrew/cask-fonts
 brew cask install font-input
+
+sudo sh -c "echo $(which zsh) >> /etc/shells"
+chsh -s $(which zsh)
