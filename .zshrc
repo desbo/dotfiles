@@ -26,6 +26,8 @@ alias lla='exa -la'
 alias llt='exa -T'
 alias llfu='exa -bghHliS --git'
 
+alias journal='vi ~/journal/$(date '+%Y-%m-%d').md'
+
 alias clean-local-git-branches='git branch --merged | egrep -v "(^\*|master)" | xargs git branch -d'
 
 export GPG_TTY=$(tty)
