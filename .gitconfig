@@ -29,7 +29,7 @@
 
 [core]
   editor = nvim
-  excludesfile = /Users/sdesborough/.gitignore_global
+  excludesfile = /Users/sam/.gitignore-global
 
 [push]
   default = current

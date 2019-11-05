@@ -14,6 +14,8 @@ if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] &&
   tmux new-session -A -s main
 fi
 
+[[ $TMUX != "" ]] && export TERM="screen-256color"
+
 alias dgit='git --git-dir ~/.dotfiles/.git --work-tree=$HOME'
 
 alias vim='nvim'
