@@ -1,4 +1,3 @@
-" vundle
 set nocompatible
 filetype off
 
@@ -11,16 +10,19 @@ endif
 call plug#begin('~/.config/vim/plugged')
 
 Plug 'bling/vim-airline'
-Plug 'fenetikm/falcon'
+Plug 'sheerun/vim-polyglot'
 Plug 'edkolev/tmuxline.vim'
+Plug 'fenetikm/falcon'
 
 call plug#end()
 
 " visual/interface
+set termguicolors
+set background=dark
+colorscheme falcon
+
 syntax on
 filetype plugin indent on
-colorscheme falcon
-set termguicolors
 
 if !has('gui_running')
   set t_Co=256
@@ -66,5 +68,3 @@ let g:falcon_airline = 1
 let g:airline_theme = 'falcon'
 
 let g:airline#extensions#tmuxline#enabled = 0
-
-au BufRead,BufNewFile *.md setlocal textwidth=80

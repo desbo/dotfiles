@@ -176,7 +176,7 @@ draw_bold_text_with_bright_colors: true
 colors:
   # Default colors
   primary:
-    background: '0x0c0c0c'
+    background: '0x0f0f11'
     foreground: '0xb4b4b9'
 
   # Colors the cursor will use if `custom_cursor_colors` is true
@@ -208,7 +208,7 @@ colors:
 
 # Use custom cursor colors. If true, display the cursor in the cursor.foreground
 # and cursor.background colors, otherwise invert the colors of the cursor.
-custom_cursor_colors: true
+    custom_cursor_colors: true
 
 
 # Visual Bell
