@@ -11,16 +11,20 @@ endif
 call plug#begin('~/.config/vim/plugged')
 
 Plug 'bling/vim-airline'
-Plug 'fenetikm/falcon'
+Plug 'sainnhe/gruvbox-material'
+Plug 'sheerun/vim-polyglot'
 Plug 'edkolev/tmuxline.vim'
 
 call plug#end()
 
 " visual/interface
+set termguicolors
+set background=dark
+let g:gruvbox_material_background = 'hard'
+colorscheme gruvbox-material
+
 syntax on
 filetype plugin indent on
-colorscheme falcon
-set termguicolors
 
 if !has('gui_running')
   set t_Co=256
@@ -62,8 +66,7 @@ set laststatus=2
 set noshowmode
 let g:airline_powerline_fonts = 1
 let g:bufferline_echo = 0
-let g:falcon_airline = 1
-let g:airline_theme = 'falcon'
+let g:airline_theme = 'gruvbox_material'
 
 let g:airline#extensions#tmuxline#enabled = 0
 
