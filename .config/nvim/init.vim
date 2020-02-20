@@ -21,6 +21,9 @@ set termguicolors
 set background=dark
 colorscheme falcon
 
+" disable cursor change
+set guicursor=
+
 syntax on
 filetype plugin indent on
 
