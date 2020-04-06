@@ -71,3 +71,5 @@ let g:falcon_airline = 1
 let g:airline_theme = 'falcon'
 
 let g:airline#extensions#tmuxline#enabled = 0
+
+au BufRead,BufNewFile *.md setlocal textwidth=80
