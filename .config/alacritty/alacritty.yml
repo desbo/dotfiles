@@ -91,7 +91,7 @@ scrolling:
 font:
   # Normal (roman) font face
   normal: 
-    family: "Input Mono Narrow"
+    family: "Iosevka Term"
     # Font family
     #
     # Default:
@@ -101,7 +101,7 @@ font:
     #family: monospace
 
     # The `style` can be specified to pick a specific face.
-    style: Extra Light 
+    style: Extralight Extended
 
   # Bold font face
   bold:
@@ -123,7 +123,7 @@ font:
     #family: monospace
 
     # The `style` can be specified to pick a specific face.
-    style: Thin Italic
+    style: Extralight Extended Italic
 
   # Point size
   size: 18.0
