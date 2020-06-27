@@ -65,10 +65,5 @@ set laststatus=2
 set noshowmode
 let g:airline_powerline_fonts = 1
 let g:bufferline_echo = 0
-<<<<<<< HEAD
-let g:falcon_airline = 1
-let g:airline_theme = 'falcon'
-
-let g:airline#extensions#tmuxline#enabled = 0
 
 au BufRead,BufNewFile *.md setlocal textwidth=80
