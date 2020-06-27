@@ -91,7 +91,7 @@ scrolling:
 font:
   # Normal (roman) font face
   normal: 
-    family: "Iosevka"
+    family: "Input Mono Narrow"
     # Font family
     #
     # Default:
@@ -101,7 +101,7 @@ font:
     #family: monospace
 
     # The `style` can be specified to pick a specific face.
-    style: Light
+    style: Extra Light 
 
   # Bold font face
   bold:
@@ -110,12 +110,12 @@ font:
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
     #family: monospace
-    style: Bold
+    style: Regular
 
     # The `style` can be specified to pick a specific face.
 
   # Italic font face
-  #italic:
+  italic:
     # Font family
     #
     # If the italic family is not specified, it will fall back to the
@@ -123,7 +123,7 @@ font:
     #family: monospace
 
     # The `style` can be specified to pick a specific face.
-    style: Italic
+    style: Thin Italic
 
   # Point size
   size: 18.0
@@ -132,7 +132,7 @@ font:
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   offset:
     x: 0
-    y: 0
+    y: 0 
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the right,
