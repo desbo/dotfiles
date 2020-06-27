@@ -12,14 +12,12 @@ call plug#begin('~/.config/vim/plugged')
 Plug 'bling/vim-airline'
 Plug 'sheerun/vim-polyglot'
 Plug 'edkolev/tmuxline.vim'
-Plug 'fenetikm/falcon'
+Plug 'arcticicestudio/nord-vim'
 
 call plug#end()
 
 " visual/interface
-set termguicolors
-set background=dark
-colorscheme falcon
+colorscheme nord
 
 " disable cursor change
 set guicursor=
@@ -67,6 +65,7 @@ set laststatus=2
 set noshowmode
 let g:airline_powerline_fonts = 1
 let g:bufferline_echo = 0
+<<<<<<< HEAD
 let g:falcon_airline = 1
 let g:airline_theme = 'falcon'
 
