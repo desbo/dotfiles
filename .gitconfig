@@ -33,11 +33,6 @@
 
 [push]
   default = current
-[filter "lfs"]
-  clean = git-lfs clean -- %f
-  smudge = git-lfs smudge -- %f
-  required = true
-  process = git-lfs filter-process
 [rerere]
   enabled = 1
 
@@ -46,4 +41,4 @@
 [gpg]
   program = gpg
 [pull]
-	rebase = true
+  rebase = true
