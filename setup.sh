@@ -39,3 +39,4 @@ chsh -s $(which zsh)
 cd $HOME && git --git-dir ~/.dotfiles/.git --work-tree=$HOME reset --hard
 
 mkdir ~/journal
+mkdir ~/code
