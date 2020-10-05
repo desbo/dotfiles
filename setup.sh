@@ -37,3 +37,5 @@ sudo sh -c "echo $(which zsh) >> /etc/shells"
 chsh -s $(which zsh)
 
 cd $HOME && git --git-dir ~/.dotfiles/.git --work-tree=$HOME reset --hard
+
+mkdir ~/journal
