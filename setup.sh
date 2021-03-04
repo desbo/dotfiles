@@ -28,10 +28,10 @@ brew install reattach-to-user-namespace
 
 brew install gpg2 pinentry-mac
 
-brew cask install alacritty
+brew install --cask alacritty
 
 brew tap homebrew/cask-fonts
-brew cask install font-iosevka
+brew install --cask font-iosevka
 
 sudo sh -c "echo $(which zsh) >> /etc/shells"
 chsh -s $(which zsh)
