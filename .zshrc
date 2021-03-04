@@ -35,6 +35,7 @@ alias journal='vi ~/journal/$(date '+%Y-%m-%d').md'
 alias clean-local-git-branches='git branch --merged | egrep -v "(^\*|master)" | xargs git branch -d'
 
 alias python=python3
+alias pip=pip3
 
 export GPG_TTY=$(tty)
 
