@@ -34,6 +34,8 @@ alias journal='vi ~/journal/$(date '+%Y-%m-%d').md'
 
 alias clean-local-git-branches='git branch --merged | egrep -v "(^\*|master)" | xargs git branch -d'
 
+alias python=python3
+
 export GPG_TTY=$(tty)
 
 setopt hist_expire_dups_first # delete duplicates first when HISTFILE size exceeds HISTSIZE
