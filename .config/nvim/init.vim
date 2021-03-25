@@ -9,6 +9,7 @@ endif
 
 call plug#begin('~/.config/vim/plugged')
 
+Plug 'airblade/vim-rooter'
 Plug 'bling/vim-airline'
 Plug 'sheerun/vim-polyglot'
 Plug 'edkolev/tmuxline.vim'
