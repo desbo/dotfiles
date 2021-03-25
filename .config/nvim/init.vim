@@ -13,6 +13,10 @@ Plug 'bling/vim-airline'
 Plug 'sheerun/vim-polyglot'
 Plug 'edkolev/tmuxline.vim'
 Plug 'arcticicestudio/nord-vim'
+Plug 'morhetz/gruvbox'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
@@ -66,4 +70,8 @@ set noshowmode
 let g:airline_powerline_fonts = 1
 let g:bufferline_echo = 0
 
+source ~/.config/nvim/metals.vim
+
 au BufRead,BufNewFile *.md setlocal textwidth=80
+
+autocmd FileType json syntax match Comment +\/\/.\+$+

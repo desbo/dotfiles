@@ -22,16 +22,21 @@ brew install nvim
 brew install ripgrep
 brew install exa
 brew install fd
+brew install bat
+brew install fzf
+brew install brew install romkatv/powerlevel10k/powerlevel10k
+
+$(brew --prefix)/opt/fzf/install
 
 brew install tmux
 brew install reattach-to-user-namespace
 
 brew install gpg2 pinentry-mac
 
-brew cask install alacritty
+brew install --cask alacritty
 
 brew tap homebrew/cask-fonts
-brew cask install font-iosevka
+brew install --cask font-hack-nerd-font
 
 sudo sh -c "echo $(which zsh) >> /etc/shells"
 chsh -s $(which zsh)
