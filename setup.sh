@@ -36,7 +36,7 @@ brew install gpg2 pinentry-mac
 brew install --cask alacritty
 
 brew tap homebrew/cask-fonts
-brew install --cask font-hack-nerd-font
+brew install --cask font-fira-code-nerd-font
 
 sudo sh -c "echo $(which zsh) >> /etc/shells"
 chsh -s $(which zsh)
