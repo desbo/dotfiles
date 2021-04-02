@@ -24,7 +24,7 @@ brew install exa
 brew install fd
 brew install bat
 brew install fzf
-brew install brew install romkatv/powerlevel10k/powerlevel10k
+brew install romkatv/powerlevel10k/powerlevel10k
 
 $(brew --prefix)/opt/fzf/install
 
