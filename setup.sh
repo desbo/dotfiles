@@ -18,10 +18,9 @@ brew -v update
 brew -v upgrade 
 
 brew install zsh
-brew install zplug
+curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
 
 brew install nvim
-
 brew install ripgrep
 brew install exa
 brew install fd
