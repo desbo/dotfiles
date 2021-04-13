@@ -18,14 +18,16 @@ brew -v update
 brew -v upgrade 
 
 brew install zsh
+brew install zplug
+
 brew install nvim
+
 brew install ripgrep
 brew install exa
 brew install fd
 brew install bat
-brew install fzf
-brew install romkatv/powerlevel10k/powerlevel10k
 
+brew install fzf
 $(brew --prefix)/opt/fzf/install
 
 brew install tmux
