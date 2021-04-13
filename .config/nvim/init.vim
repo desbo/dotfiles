@@ -9,7 +9,7 @@ endif
 
 call plug#begin('~/.config/vim/plugged')
 
-Plug 'airblade/vim-rooter'
+"Plug 'airblade/vim-rooter'
 Plug 'bling/vim-airline'
 Plug 'sheerun/vim-polyglot'
 Plug 'edkolev/tmuxline.vim'
@@ -17,6 +17,7 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'morhetz/gruvbox'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+
 Plug 'junegunn/fzf.vim'
 
 call plug#end()
@@ -76,3 +77,11 @@ source ~/.config/nvim/metals.vim
 au BufRead,BufNewFile *.md setlocal textwidth=80
 
 autocmd FileType json syntax match Comment +\/\/.\+$+
+
+
+let mapleader = "\<Space>"
+
+" fzf bindings
+nnoremap <Leader>fh :History<CR>
+nnoremap <Leader>ff :Files<CR>
+nnoremap <Leader>fg :Rg<CR>

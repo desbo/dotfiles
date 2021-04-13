@@ -39,7 +39,9 @@ alias clean-local-git-branches='git branch --merged | egrep -v "(^\*|master)" | 
 
 alias python=python3
 alias pip=pip3
-alias fzf="fzf --height 66% --preview 'bat --style=numbers --color=always --line-range :500 {}'"
+
+alias fzf="fzf --height 66%" 
+alias fzf-code="fzf --height 66% --preview 'bat --style=numbers --color=always --line-range :500 {}'"
 
 export GPG_TTY=$(tty)
 
