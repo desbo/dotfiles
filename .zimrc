@@ -33,4 +33,8 @@ zmodule zsh-users/zsh-autosuggestions
 zmodule zsh-users/zsh-history-substring-search
 # }}} End configuration added by Zim install
 
+# prompt
 zmodule romkatv/powerlevel10k
+
+# fzf on tab completion
+zmodule Aloxaf/fzf-tab
