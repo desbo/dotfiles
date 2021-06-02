@@ -145,6 +145,8 @@ unsetopt nomatch
 
 [[ $TMUX != "" ]] && export TERM="screen-256color"
 
+eval "$(zoxide init zsh)"
+
 alias dgit='git --git-dir ~/.dotfiles/.git --work-tree=$HOME'
 
 alias vim='nvim'
@@ -166,6 +168,8 @@ alias pip=pip3
 
 alias fzf="fzf --height 66%" 
 alias fzf-code="fzf --height 66% --preview 'bat --style=numbers --color=always --line-range :500 {}'"
+
+alias cd=z
 
 export GPG_TTY=$(tty)
 

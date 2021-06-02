@@ -25,6 +25,7 @@ brew install ripgrep
 brew install exa
 brew install fd
 brew install bat
+brew install zoxide
 
 brew install fzf
 $(brew --prefix)/opt/fzf/install
