@@ -39,7 +39,7 @@
 [commit]
   gpgsign = true
 [gpg]
-  program = gpg
+	program = gpg
 [pull]
   rebase = true
 [init]
