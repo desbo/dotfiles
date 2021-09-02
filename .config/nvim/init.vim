@@ -14,7 +14,6 @@ Plug 'bling/vim-airline'
 Plug 'sheerun/vim-polyglot'
 Plug 'edkolev/tmuxline.vim'
 Plug 'arcticicestudio/nord-vim'
-Plug 'morhetz/gruvbox'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 

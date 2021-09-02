@@ -43,4 +43,35 @@
 [pull]
   rebase = true
 [init]
-	defaultBranch = main
+  defaultBranch = main
+
+[include]
+  path = ~/.gitconfig.local
+
+[pager]
+  diff = delta
+  log = delta
+  reflog = delta
+  show = delta
+
+[delta]
+  plus-style = "syntax #2e403e"
+  minus-style = "syntax #402e2e"
+  syntax-theme = "Nord"
+  navigate = true
+  hunk-header-file-style = "#999999"
+  hunk-header-line-number-style = bold "#003300"
+  hunk-header-style = line-number syntax
+  hunk-header-line-number-style = green
+  hunk-header-decoration-style = box "#4C566A"
+  line-numbers = true
+  line-numbers-minus-style = "#4C566A"
+  line-numbers-zero-style = "#4C566A"
+  line-numbers-plus-style = "#8994a9"
+  line-numbers-right-style = "#4C566A"
+  minus-emph-style = normal "#594040"
+  plus-emph-style = syntax "#405956"
+
+
+[interactive]
+  diffFilter = delta --color-only
