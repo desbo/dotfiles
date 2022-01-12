@@ -72,6 +72,5 @@
   minus-emph-style = normal "#594040"
   plus-emph-style = syntax "#405956"
 
-
 [interactive]
   diffFilter = delta --color-only
