@@ -129,6 +129,8 @@ bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 # }}} End configuration added by Zim install
 
+export TERM=xterm-256color
+
 if [ -z "$TMUX" ]; then
   exec tmux new-session -A -s main
 fi
