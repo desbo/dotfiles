@@ -129,7 +129,7 @@ bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 # }}} End configuration added by Zim install
 
-if [ -z "$TMUX" ]; then
+if [ -z "$TMUX" ] && ! "$TERM_PROGRAM" == "vscode"; then
   exec tmux new-session -A -s main
 fi
 
