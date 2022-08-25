@@ -150,13 +150,6 @@ alias dgit='git --git-dir ~/.dotfiles/.git --work-tree=$HOME'
 alias vim='nvim'
 alias vi='nvim'
 
-alias ls='exa'
-alias ll='exa -l'
-alias lll='exa -l | less'
-alias lla='exa -la'
-alias llt='exa -T'
-alias llfu='exa -bghHliS --git'
-
 alias journal='vi ~/journal/$(date '+%Y-%m-%d').md'
 
 alias clean-local-git-branches='git branch --merged | egrep -v "(^\*|master)" | xargs git branch -d'

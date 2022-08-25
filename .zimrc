@@ -38,3 +38,5 @@ zmodule romkatv/powerlevel10k --use degit
 
 # fzf on tab completion
 zmodule Aloxaf/fzf-tab
+
+zmodule exa
