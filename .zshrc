@@ -129,8 +129,8 @@ bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 # }}} End configuration added by Zim install
 
-if [ -z "$TMUX" ] && ! "$TERM_PROGRAM" == "vscode"; then
-  exec tmux new-session -A -s main
+if [ -z "$TMUX" ]; then
+ exec tmux new-session -A -s main
 fi
 
 autoload -U promptinit; promptinit
@@ -142,8 +142,6 @@ SAVEHIST=10000
 setopt appendhistory
 
 unsetopt nomatch
-
-[[ $TMUX != "" ]] && export TERM="screen-256color"
 
 eval "$(zoxide init zsh)"
 
