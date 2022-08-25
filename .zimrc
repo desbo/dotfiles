@@ -40,3 +40,4 @@ zmodule romkatv/powerlevel10k --use degit
 zmodule Aloxaf/fzf-tab
 
 zmodule exa
+zmodule fzf
