@@ -3,7 +3,7 @@
 ZSH_DIR="$HOME/.zsh"
 
 if ! hash brew 2>/dev/null; then
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
 if ! test -d $ZSH_DIR; then

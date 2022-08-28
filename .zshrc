@@ -5,8 +5,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-ZIM_HOME=~/.zim
-
 export PATH=$PATH:/opt/homebrew/bin 
 
 # Start configuration added by Zim install {{{
@@ -133,7 +131,7 @@ bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 # }}} End configuration added by Zim install
 
-if [ -z "$TMUX" ]; then
+if [ -z "$TMUX" ]; then 
   exec tmux new-session -A -s main
 fi
 
@@ -155,13 +153,6 @@ alias dgit='git --git-dir ~/.dotfiles/.git --work-tree=$HOME'
 
 alias vim='nvim'
 alias vi='nvim'
-
-alias ls='exa'
-alias ll='exa -l'
-alias lll='exa -l | less'
-alias lla='exa -la'
-alias llt='exa -T'
-alias llfu='exa -bghHliS --git'
 
 alias journal='vi ~/journal/$(date '+%Y-%m-%d').md'
 
