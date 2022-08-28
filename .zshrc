@@ -145,8 +145,6 @@ setopt appendhistory
 
 unsetopt nomatch
 
-[[ $TMUX != "" ]] && export TERM="screen-256color"
-
 eval "$(zoxide init zsh)"
 
 alias dgit='git --git-dir ~/.dotfiles/.git --work-tree=$HOME'
