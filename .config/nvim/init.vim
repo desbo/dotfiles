@@ -86,3 +86,8 @@ let mapleader = "\<Space>"
 nnoremap <Leader>fh :History<CR>
 nnoremap <Leader>ff :Files<CR>
 nnoremap <Leader>fg :Rg<CR>
+
+" default leap bindings
+lua require('leap').add_default_mappings()
+call nvim_set_hl(0, 'LeapLabelPrimary', { 'ctermfg': 'White', 'ctermbg': 'DarkBlue', 'bold': v:true })
+
