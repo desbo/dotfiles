@@ -10,14 +10,15 @@ endif
 call plug#begin('~/.config/vim/plugged')
 
 "Plug 'airblade/vim-rooter'
-Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline'
 Plug 'sheerun/vim-polyglot'
 Plug 'edkolev/tmuxline.vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'morhetz/gruvbox'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'ggandor/leap.nvim' 
 
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 call plug#end()
