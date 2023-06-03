@@ -9,16 +9,19 @@ endif
 
 call plug#begin('~/.config/vim/plugged')
 
-"Plug 'airblade/vim-rooter'
-Plug 'bling/vim-airline'
-Plug 'sheerun/vim-polyglot'
+Plug 'neovim/nvim-lspconfig'
+Plug 'nvim-lua/lsp-status.nvim'
+Plug 'scalameta/nvim-metals'
+
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
 Plug 'edkolev/tmuxline.vim'
 Plug 'arcticicestudio/nord-vim'
-Plug 'morhetz/gruvbox'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.1' }
+Plug 'nvim-tree/nvim-web-devicons' 
+Plug 'akinsho/bufferline.nvim', { 'tag': '*' }
 
 call plug#end()
 
@@ -61,11 +64,6 @@ set smartcase
 set incsearch
 set ignorecase
 
-" buffers
-set autochdir
-set hidden
-let g:buftabs_only_basename=1
-
 " airline
 set laststatus=2
 set noshowmode
@@ -76,10 +74,6 @@ au BufRead,BufNewFile *.md setlocal textwidth=80
 
 autocmd FileType json syntax match Comment +\/\/.\+$+
 
-
 let mapleader = "\<Space>"
 
-" fzf bindings
-nnoremap <Leader>fh :History<CR>
-nnoremap <Leader>ff :Files<CR>
-nnoremap <Leader>fg :Rg<CR>
+lua require('init')
